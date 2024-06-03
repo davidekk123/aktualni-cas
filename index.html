@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitální hodiny</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+    <link rel="shortcut icon" href="favicon2.png" type="image/x-icon">
+</head>
+<body>
+<header>
+    <h1>Vítejte v mojich digitálních hodinách</h1>
+    <p class="text1">Tyto digitální hodiny ukazují přesný čas místního časového pásma</p>
+</header>
+
+    <div id="clock">
+        <div id="time"></div>
+        <div id="date"></div>
+    </div>
+<form id="settings-form">
+    <div>
+        <label id="format" for="time-format">Formát času:</label>
+        <select id="time-format" onchange="casFormat()">
+            <option value="24">24 hodin</option>
+            <option value="12">12 hodin</option>
+        </select>
+    </div>
+</form>
+
+    <p class="text2">Těhle 8 digitálních hodin ukazují časy v různých časových pásmech</p>
+        <div class="timezones">
+        <div class="timezone" id="newyork"></div>
+        <div class="timezone" id="londyn"></div>
+        <div class="timezone" id="pariz"></div>
+        <div class="timezone" id="tokyo"></div>
+        <div class="timezone" id="sydney"></div>
+        <div class="timezone" id="moskva"></div>
+        <div class="timezone" id="dubai"></div>
+        <div class="timezone" id="la"></div>
+     </div>
+
+<footer>
+    <p>&copy; Digitální hodiny Created by David Hainc SPŠE, 2.A </p>
+</footer>
+
+<script src="javascript.js"></script>
+</body>
+</html>
+
